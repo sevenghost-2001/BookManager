@@ -22,7 +22,13 @@ namespace BookManager.Controllers
             ViewBag.lsttype = lsttype;
             return View(lstBook);
         }
-        
+        public IActionResult SachTheoLoai(string maloai)
+        {
+            List<Sach> lstSach = db.Saches.Where(x=>x.TheLoai == maloai).ToList();
+            var lsttype = db.TheLoais.ToList();
+            ViewBag.lsttype = lsttype;
+            return View(lstSach);
+        }
         public IActionResult Privacy()
         {
             return View();
