@@ -2,7 +2,47 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">Đây là web bán sách</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhà sách trực tuyến</title>
+</head>
+<body>
+    <header>
+        <h1>Nhà sách trực tuyến</h1>
+        <p>Bài thi Thực hành Công nghệ NET</p>
+    </header>
+    <main>
+        <section class="tim-kiem">
+            <h2>Tìm kiếm</h2>
+            <form action="XemSach.aspx?Search={0}" method="post">
+                <input type="text" name="txtSearch" placeholder="Nhập tên sách">
+                <input type="submit" value="Tìm kiếm">
+            </form>
+        </section>
+        <section class="the-loai">
+            <h2>Thể loại</h2>
+            <ul>
+                <li><a href="#">Giáo dục</a></li>
+                <li><a href="#">Thông tin cá nhân</a></li>
+                <li><a href="#">Giải trí</a></li>
+                <li><a href="#">Thể thao</a></li>
+                <li><a href="#">Văn học</a></li>
+            </ul>
+        </section>
+        <section class="gio-hang">
+            <h2>Giỏ hàng</h2>
+            <p>Số lượng sách: 0</p>
+            <p>Tổng giá: 0</p>
+            <a href="#">Xem giỏ hàng</a>
+        </section>
+        <section class="thong-ke">
+            <h2>Thống kê</h2>
+            <p>Người dùng đang trực tuyến: 1</p>
+            <p>Tổng số người truy cập: 11</p>
+            <p>Copyright © 2023 by Tên_của_bạn</p>
+        </section>
+    </main>
+</body>
+</html>
