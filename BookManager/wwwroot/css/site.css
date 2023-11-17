@@ -15,4 +15,14 @@ html {
 
 body {
   margin-bottom: 60px;
+
+}
+.container {
+    display: flex;
+}
+#Navbar{
+    width:35%;
+}
+#content{
+    width:65%;
 }

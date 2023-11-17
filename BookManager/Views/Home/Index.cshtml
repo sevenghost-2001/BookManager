@@ -7,42 +7,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Nhà sách trực tuyến</title>
+    <link src="~/css"/>
 </head>
 <body>
     <header>
         <h1>Nhà sách trực tuyến</h1>
-        <p>Bài thi Thực hành Công nghệ NET</p>
+        <p>Họ tên:Lê Văn Trung</p>
+        <p>MSSV:4501104259</p>
+        <p>Bài Thi Thực hành Công nghệ NET</p>
     </header>
     <main>
-        <section class="tim-kiem">
-            <h2>Tìm kiếm</h2>
-            <form action="XemSach.aspx?Search={0}" method="post">
-                <input type="text" name="txtSearch" placeholder="Nhập tên sách">
-                <input type="submit" value="Tìm kiếm">
-            </form>
-        </section>
-        <section class="the-loai">
-            <h2>Thể loại</h2>
-            <ul>
-                <li><a href="#">Giáo dục</a></li>
-                <li><a href="#">Thông tin cá nhân</a></li>
-                <li><a href="#">Giải trí</a></li>
-                <li><a href="#">Thể thao</a></li>
-                <li><a href="#">Văn học</a></li>
-            </ul>
-        </section>
-        <section class="gio-hang">
-            <h2>Giỏ hàng</h2>
-            <p>Số lượng sách: 0</p>
-            <p>Tổng giá: 0</p>
-            <a href="#">Xem giỏ hàng</a>
-        </section>
-        <section class="thong-ke">
-            <h2>Thống kê</h2>
-            <p>Người dùng đang trực tuyến: 1</p>
-            <p>Tổng số người truy cập: 11</p>
-            <p>Copyright © 2023 by Tên_của_bạn</p>
-        </section>
+        <div class="container">
+            <div id="Navbar">
+                <section class="tim-kiem">
+                    <h2>Tìm kiếm</h2>
+                    <form action="XemSach.aspx?Search={0}" method="post">
+                        <input type="text" name="txtSearch" placeholder="Nhập tên sách">
+                        <input type="submit" value="Tìm kiếm">
+                    </form>
+                </section>
+                <section class="the-loai">
+                    <h2>Thể loại</h2>
+                    <ul>
+                        <li><a href="#">Giáo dục</a></li>
+                        <li><a href="#">Thông tin cá nhân</a></li>
+                        <li><a href="#">Giải trí</a></li>
+                        <li><a href="#">Thể thao</a></li>
+                        <li><a href="#">Văn học</a></li>
+                    </ul>
+                </section>
+                <section class="gio-hang">
+                    <h2>Giỏ hàng</h2>
+                    <p>Số lượng sách: 0</p>
+                    <p>Tổng giá: 0</p>
+                    <a href="#">Xem giỏ hàng</a>
+                </section>
+                <section class="thong-ke">
+                    <h2>Thống kê</h2>
+                    <p>Người dùng đang trực tuyến: 1</p>
+                    <p>Tổng số người truy cập: 11</p>
+                    <p>Copyright © 2023 by Tên_của_bạn</p>
+                </section><section class="tim-kiem">
+                    <h2>Tìm kiếm</h2>
+                    <form action="XemSach.aspx?Search={0}" method="post">
+                        <input type="text" name="txtSearch" placeholder="Nhập tên sách">
+                        <input type="submit" value="Tìm kiếm">
+                    </form>
+                </section>
+                <section class="the-loai">
+                    <h2>Thể loại</h2>
+                    <ul>
+                        <li><a href="#">Giáo dục</a></li>
+                        <li><a href="#">Thông tin cá nhân</a></li>
+                        <li><a href="#">Giải trí</a></li>
+                        <li><a href="#">Thể thao</a></li>
+                        <li><a href="#">Văn học</a></li>
+                    </ul>
+                </section>
+                <section class="gio-hang">
+                    <h2>Giỏ hàng</h2>
+                    <p>Số lượng sách: 0</p>
+                    <p>Tổng giá: 0</p>
+                    <a href="#">Xem giỏ hàng</a>
+                </section>
+                <section class="thong-ke">
+                    <h2>Thống kê</h2>
+                    <p>Người dùng đang trực tuyến: 1</p>
+                    <p>Tổng số người truy cập: 11</p>
+                    <p>Copyright © 2023 by Lê Văn Trung</p>
+                </section>
+            </div>
+            <div id="content">Đây là phần nội dung</div>
+        </div>
     </main>
 </body>
 </html>
