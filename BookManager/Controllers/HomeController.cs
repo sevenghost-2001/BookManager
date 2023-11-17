@@ -1,11 +1,13 @@
 ﻿using BookManager.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace BookManager.Controllers
 {
     public class HomeController : Controller
     {
+        BOOKSTOREContext db = new BOOKSTOREContext();
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -15,9 +17,12 @@ namespace BookManager.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var lstBook = db.Saches.ToList();
+            var lsttype = db.TheLoais.ToList();
+            ViewBag.lsttype = lsttype;
+            return View(lstBook);
         }
-
+        
         public IActionResult Privacy()
         {
             return View();
